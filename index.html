@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Kirana - Fresh Groceries Delivered</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-store"></i> Apna Kirana
+            </a>
+            <nav class="main-nav">
+                <div class="search-bar">
+                    <input type="search" id="search-input" placeholder="Search for products...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#cart-section" class="nav-link cart-link"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span></a></li>
+                    <li><a href="#" class="nav-link" id="login-btn"><i class="fas fa-user"></i> Admin Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero-section">
+            <h1>Quality Groceries, at Your Doorstep</h1>
+            <p>Fresh vegetables, daily essentials, and more. All in one place.</p>
+        </section>
+
+        <section class="product-grid-section" id="products">
+            <h2 class="section-title">All Products</h2>
+            <div class="product-grid">
+
+                <div class="product-card" data-id="1" data-name="Whole Wheat Atta">
+                    <img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Atta" alt="Whole Wheat Atta">
+                    <h3 class="product-name">Whole Wheat Atta</h3>
+                    <p class="product-price" data-price="45">₹45 / kg</p>
+                    <div class="product-controls">
+                        <label for="qty-1">Weight (kg):</label>
+                        <input type="number" id="qty-1" class="product-qty" value="1" min="0.5" step="0.5">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="2" data-name="Basmati Rice">
+                    <img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Rice" alt="Basmati Rice">
+                    <h3 class="product-name">Basmati Rice</h3>
+                    <p class="product-price" data-price="90">₹90 / kg</p>
+                    <div class="product-controls">
+                        <label for="qty-2">Weight (kg):</label>
+                        <input type="number" id="qty-2" class="product-qty" value="1" min="0.5" step="0.5">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="3" data-name="Refined Sugar">
+                    <img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Sugar" alt="Refined Sugar">
+                    <h3 class="product-name">Refined Sugar</h3>
+                    <p class="product-price" data-price="42">₹42 / kg</p>
+                    <div class="product-controls">
+                        <label for="qty-3">Weight (kg):</label>
+                        <input type="number" id="qty-3" class="product-qty" value="1" min="0.5" step="0.5">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="4" data-name="Toor Dal">
+                    <img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Toor+Dal" alt="Toor Dal">
+                    <h3 class="product-name">Toor Dal</h3>
+                    <p class="product-price" data-price="110">₹110 / kg</p>
+                    <div class="product-controls">
+                        <label for="qty-4">Weight (kg):</label>
+                        <input type="number" id="qty-4" class="product-qty" value="1" min="0.5" step="0.5">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="5" data-name="Sunflower Oil">
+                    <img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Oil" alt="Sunflower Oil">
+                    <h3 class="product-name">Sunflower Oil</h3>
+                    <p class="product-price" data-price="150">₹150 / litre</p>
+                    <div class="product-controls">
+                        <label for="qty-5">Quantity:</label>
+                        <input type="number" id="qty-5" class="product-qty" value="1" min="1" step="1">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="6" data-name="Iodized Salt">
+                    <img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Salt" alt="Iodized Salt">
+                    <h3 class="product-name">Iodized Salt</h3>
+                    <p class="product-price" data-price="20">₹20 / kg</p>
+                    <div class="product-controls">
+                        <label for="qty-6">Weight (kg):</label>
+                        <input type="number" id="qty-6" class="product-qty" value="1" min="1" step="1">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="7" data-name="Tomatoes"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Tomatoes" alt="Tomatoes"><h3 class="product-name">Tomatoes</h3><p class="product-price" data-price="30">₹30 / kg</p><div class="product-controls"><label for="qty-7">Weight (kg):</label><input type="number" id="qty-7" class="product-qty" value="1" min="0.25" step="0.25"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="8" data-name="Potatoes"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Potatoes" alt="Potatoes"><h3 class="product-name">Potatoes</h3><p class="product-price" data-price="25">₹25 / kg</p><div class="product-controls"><label for="qty-8">Weight (kg):</label><input type="number" id="qty-8" class="product-qty" value="1" min="0.5" step="0.5"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="9" data-name="Onions"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Onions" alt="Onions"><h3 class="product-name">Onions</h3><p class="product-price" data-price="40">₹40 / kg</p><div class="product-controls"><label for="qty-9">Weight (kg):</label><input type="number" id="qty-9" class="product-qty" value="1" min="0.5" step="0.5"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="10" data-name="Milk"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Milk" alt="Milk"><h3 class="product-name">Milk</h3><p class="product-price" data-price="28">₹28 / 500ml</p><div class="product-controls"><label for="qty-10">Quantity:</label><input type="number" id="qty-10" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="11" data-name="Eggs"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Eggs" alt="Eggs"><h3 class="product-name">Eggs</h3><p class="product-price" data-price="72">₹72 / dozen</p><div class="product-controls"><label for="qty-11">Quantity:</label><input type="number" id="qty-11" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="12" data-name="Bread"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Bread" alt="Bread"><h3 class="product-name">Bread</h3><p class="product-price" data-price="40">₹40 / loaf</p><div class="product-controls"><label for="qty-12">Quantity:</label><input type="number" id="qty-12" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="13" data-name="Tea Powder"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Tea" alt="Tea Powder"><h3 class="product-name">Tea Powder</h3><p class="product-price" data-price="120">₹120 / 250g</p><div class="product-controls"><label for="qty-13">Quantity:</label><input type="number" id="qty-13" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="14" data-name="Coffee Powder"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Coffee" alt="Coffee Powder"><h3 class="product-name">Coffee Powder</h3><p class="product-price" data-price="150">₹150 / 100g</p><div class="product-controls"><label for="qty-14">Quantity:</label><input type="number" id="qty-14" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="15" data-name="Turmeric Powder"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Turmeric" alt="Turmeric Powder"><h3 class="product-name">Turmeric Powder</h3><p class="product-price" data-price="35">₹35 / 100g</p><div class="product-controls"><label for="qty-15">Quantity:</label><input type="number" id="qty-15" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="16" data-name="Chilli Powder"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Chilli" alt="Chilli Powder"><h3 class="product-name">Chilli Powder</h3><p class="product-price" data-price="40">₹40 / 100g</p><div class="product-controls"><label for="qty-16">Quantity:</label><input type="number" id="qty-16" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="17" data-name="Coriander Powder"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Coriander" alt="Coriander Powder"><h3 class="product-name">Coriander Powder</h3><p class="product-price" data-price="30">₹30 / 100g</p><div class="product-controls"><label for="qty-17">Quantity:</label><input type="number" id="qty-17" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="18" data-name="Biscuits"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Biscuits" alt="Biscuits"><h3 class="product-name">Biscuits</h3><p class="product-price" data-price="10">₹10 / pack</p><div class="product-controls"><label for="qty-18">Quantity:</label><input type="number" id="qty-18" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="19" data-name="Washing Soap"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Washing+Soap" alt="Washing Soap"><h3 class="product-name">Washing Soap</h3><p class="product-price" data-price="15">₹15 / bar</p><div class="product-controls"><label for="qty-19">Quantity:</label><input type="number" id="qty-19" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="20" data-name="Bathing Soap"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Bathing+Soap" alt="Bathing Soap"><h3 class="product-name">Bathing Soap</h3><p class="product-price" data-price="25">₹25 / bar</p><div class="product-controls"><label for="qty-20">Quantity:</label><input type="number" id="qty-20" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="21" data-name="Shampoo"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Shampoo" alt="Shampoo"><h3 class="product-name">Shampoo</h3><p class="product-price" data-price="90">₹90 / bottle</p><div class="product-controls"><label for="qty-21">Quantity:</label><input type="number" id="qty-21" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="22" data-name="Toothpaste"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Toothpaste" alt="Toothpaste"><h3 class="product-name">Toothpaste</h3><p class="product-price" data-price="50">₹50 / tube</p><div class="product-controls"><label for="qty-22">Quantity:</label><input type="number" id="qty-22" class="product-qty" value="1" min="1" step="1"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="23" data-name="Ghee"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Ghee" alt="Ghee"><h3 class="product-name">Ghee</h3><p class="product-price" data-price="550">₹550 / kg</p><div class="product-controls"><label for="qty-23">Weight (kg):</label><input type="number" id="qty-23" class="product-qty" value="1" min="0.5" step="0.5"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="24" data-name="Besan"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Besan" alt="Besan"><h3 class="product-name">Besan</h3><p class="product-price" data-price="80">₹80 / kg</p><div class="product-controls"><label for="qty-24">Weight (kg):</label><input type="number" id="qty-24" class="product-qty" value="1" min="0.5" step="0.5"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card" data-id="25" data-name="Maida"><img src="https://via.placeholder.com/300x200/CCCCCC/FFFFFF?text=Maida" alt="Maida"><h3 class="product-name">Maida</h3><p class="product-price" data-price="50">₹50 / kg</p><div class="product-controls"><label for="qty-25">Weight (kg):</label><input type="number" id="qty-25" class="product-qty" value="1" min="0.5" step="0.5"><button class="add-to-cart-btn">Add to Cart</button></div></div>
+            
+            </div>
+        </section>
+
+        <section class="cart-section" id="cart-section">
+            <h2 class="section-title">Your Shopping Cart</h2>
+            <div class="cart-container">
+                <div class="customer-info">
+                    <label for="customer-name">Customer Name:</label>
+                    <input type="text" id="customer-name" placeholder="Enter name or search records">
+                    <div id="customer-suggestions"></div>
+                </div>
+                <ul id="cart-items" class="cart-items-list">
+                    <li class="cart-empty-msg">Your cart is empty.</li>
+                </ul>
+                <div class="cart-summary">
+                    <p class="total-price">Total: ₹<span id="cart-total">0.00</span></p>
+                    <button id="generate-bill-btn" class="generate-bill-btn">Generate Bill</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Apna Kirana. All Rights Reserved.</p>
+            <p>Designed with care for our valued customers.</p>
+        </div>
+    </footer>
+
+    <div id="admin-login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="bill-modal" class="modal">
+        <div class="modal-content" id="bill-content">
+            <span class="close-btn">&times;</span>
+            <h2>Invoice / Bill</h2>
+            <div id="bill-details">
+                </div>
+            <button id="print-bill-btn">Print Bill</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+                          </html>
+                      
